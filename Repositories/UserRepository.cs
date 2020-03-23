@@ -17,7 +17,7 @@ namespace TicketManagement.Repositories
 
         private List<User> LoadData()
         {
-            var dataString = File.ReadAllText("E:\\A C A D E M I C\\IUT SWE\\SEM 5\\CSE     4539         SERVER PROGRAMMING\\L A B\\TicketManagement\\WebApplication1\\Data\\User.json");
+            var dataString = File.ReadAllText("E:\\P R O D I G Y\\A C A D E M I C\\IUT SWE\\SEM 5\\CSE     4539         SERVER PROGRAMMING\\L A B\\SP_TicketManaegement\\Data\\User.json");
             return JsonConvert.DeserializeObject<List<User>>(dataString);
         }
 
@@ -56,7 +56,7 @@ namespace TicketManagement.Repositories
         private void SaveData(List<User> data)
         {
             var dataString = JsonConvert.SerializeObject(data, Formatting.Indented);
-            File.WriteAllText("E:\\A C A D E M I C\\IUT SWE\\SEM 5\\CSE     4539         SERVER PROGRAMMING\\L A B\\TicketManagement\\WebApplication1\\Data\\User.json", dataString);
+            File.WriteAllText("E:\\P R O D I G Y\\A C A D E M I C\\IUT SWE\\SEM 5\\CSE     4539         SERVER PROGRAMMING\\L A B\\SP_TicketManaegement\\Data\\User.json", dataString);
         }
     }
 }
