@@ -1,5 +1,8 @@
 [
   {
-
+    "Ticket_Guid": "37237093-729e-4fff-9db8-b33b86388f97",
+    "VehicleType": "Bus",
+    "TicketPrice": 600,
+    "TicketQuantity": 1
   }
 ]
